@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari</title>
+    <link rel="stylesheet" type="text/css" href="estilos formulari.css">
+</head>
+<body>
+<h1>Formulari</h1>
+<form action="/action_page.php">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br> <!-entrada del email->
+
+    <label for="nombre_apellidos">Nombre y apellidos:</label>
+    <input type="text" id="nombre_apellidos" name="nombre_apellidos" required><br><br> <!-entrada de text curt->
+
+    <label for="Edad">Edad:</label>
+    <input type="number" id="Edad" name="Edad" required><br><br> <!-entrada númerica->
+
+    <p>¿Que deportes has practicado?</p> <!-checkbox->
+    <input type="checkbox" id="Futbol" name="deporte practicado" value="Futbol" checked>
+    <label for="Futbol">Futbol</label><br>
+    <input type="checkbox" id="Baloncesto" name="deporte practicado" value="Baloncesto">
+    <label for="Baloncesto">Baloncesto</label><br>
+    <input type="checkbox" id="Tenis" name="deporte practicado" value="Tenis">
+    <label for="Tenis">Tenis</label><br>
+    <input type="checkbox" id="Ninguno" name="deporte practica do" value="Ninguno">
+    <label for="Ninguno">Ninguno</label><br>
+
+
+    <label for="¿Cuántos años has practicado deporte?">¿Cuántos años has practicado deporte?</label>  <!-deesplegable->
+    <select id="¿Cuántos años has practicado deporte?" name="¿Cuántos años has practicado deporte?" required>
+        <option value="1 año">1 año</option>
+        <option value="2 años">2 años</option>
+        <option value="3 años">3años</option>
+        <option value="4 años">4 años</option>
+        <option value="5 años">5 años</option>
+        <option value="Más de 5 años">Más de 5 años</option>
+    </select><br><br>
+
+    <p>¿Cuál es tu deporte preferido?</p> <!-radio buttons->
+    <input type="radio" id="Futbol" name="deporte preferido" value="Futbol" required checked>
+    <label for="Futbol">Futbol</label><br>
+    <input type="radio" id="Baloncesto" name="deporte preferido" value="Baloncesto" required>
+    <label for="Baloncesto">Baloncesto</label><br>
+    <input type="radio" id="Tenis" name="deporte preferido" value="Tenis" required>
+    <label for="Tenis">Tenis</label><br>
+
+
+    <p>¿Qué otros temas relacionados con el deporte te interesan?</p> <!entrada de text llarga amb place holder->
+    <textarea id="Deporte" name="Intereses deporte" rows="4" cols="50"
+              placeholder="Sobre el deporte me interesa...">
+    </textarea><br>
+
+
+        <input type="submit" value="Enviar este formulario" onclick="location.href='formulari enviar.html'"/>
+    <!-botó d'enviar>
+
+    </form>
+</body>
+</html>
